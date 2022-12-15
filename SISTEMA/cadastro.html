@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/cadastro.css" />
+  </head>
+  <body>
+      <div class="container">
+        <div>
+            <h1 class="ola">Olá</h1>
+            <p class="text">Esse é o primeiro passo para saber onde você está investindo,<br> 
+                quanto está vendendo  e o que te trará mais resultado. </p>
+            <h1 class="vamos">Vamos começar?</h1>
+        </div>
+        <div class="input-group inputNome">
+            <input
+              type="text"
+              id="valor1"
+              onkeyup="enviar()"
+            />
+            <label>Seu nome</label>
+          </div>
+        <div class="input-group inputEmail">
+            <input
+              type="email"
+              id="valor2"
+              onkeyup="enviar2()"
+              onblur="validarEmail()"
+              onfocus="redefinirMsg()"
+            />
+            <label>E-mail</label>
+            <span id="error-email"></span>
+          </div>
+        <div class="input-group inputSenha" id="div1">
+            <input type="password" id="valor3" onkeyup= "enviar3()">
+            <label>Senha</label>
+            <img src="./assets/images/eye.svg" alt="eye" id="eye">
+          </div>
+          <div class="google" id="buttonDiv"></div>
+          <div class="findPassword">
+
+        <div class="input-group inputSenha" id="div2">
+                <input type="password" id="valor4" onkeyup= "enviar4()">
+                <label>Confirme sua senha</label>
+                <img src="./assets/images/eye.svg" alt="eye" id="eye2">
+              </div>
+              <div class="google" id="buttonDiv2"></div>
+              <div class="findPassword">
+
+        <button class="entrar">Entrar</button>
+
+
+
+
+
+
+
+      </div>
+    <script src="./assets/cadastro.js"></script>
+  </body>
+</html>

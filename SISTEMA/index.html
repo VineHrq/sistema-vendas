@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inicial">
+        <h1 class="titulo">Se vender é bom</h1>
+        <p class="subtitulo">
+          saber o quanto, como <br />
+          e com qual estratégia, <br />
+          é melhor ainda!
+        </p>
+        <div class="cadastre"><a href="./cadastro.html">É novo por aqui? Cadastre-se!</a></div>
+      </div>
+      <div class="login">
+        <div class="preencher">
+          <h1 class="entre">Entre:</h1>
+          <div class="input-group inputEmail">
+            <input
+              type="email"
+              id="valor1"
+              onkeyup="enviar()"
+              onblur="validarEmail()"
+              onfocus="redefinirMsg()"
+            />
+            <label>E-mail</label>
+            <span id="error-email"></span>
+          </div>
+          <div class="input-group inputSenha" id="div">
+            <input type="password" id="valor2" onkeyup= "enviar2()">
+            <label>Senha</label>
+            <img src="./assets/images/eye.svg" alt="eye" id="eye">
+          </div>
+          <div class="google" id="buttonDiv"></div>
+          <div class="findPassword">
+            <img src="./assets/images/interrogacao.svg" alt="interrogacao" />
+            <u>Esqueceu sua senha?</u>
+          </div>
+          <button class="entrar">Entrar</button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
+

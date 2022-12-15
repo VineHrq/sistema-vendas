@@ -1,0 +1,250 @@
+*{
+margin: auto;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF;
+}
+
+a{
+    color: inherit;
+}
+
+
+.inicial{
+    position: absolute;
+    display: block;
+    min-width: 600px;
+    width: 52.8%;
+    height: 100%;
+    background: #64D38A;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo{
+    position: absolute;
+    left: 11.42%;
+    top: 36.58%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 30px;
+    color: #203F57;
+}
+.subtitulo{
+    position: absolute;
+    top: 43.75%;
+    left: 11.42%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #203F57;
+}
+
+.cadastre{
+    height: 30px;
+    min-width: 322px;
+    position: absolute;
+    left: 30%;
+    top: 74.74%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #203F57; 
+}
+.cadastre:hover{
+    color: #FFFFFF;
+    transition: all .2s;
+}
+
+.login{
+    position:absolute;
+    left: 52.8%;
+    width: 47.2%;
+    height: 100%;
+    background: #FFFFFF;
+}
+
+.preencher{
+    position: absolute;
+    width: 320px;
+    height: 301px;
+    left: 22.75%;
+    top: 29.3%;
+}
+
+.entre{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #203F57;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-group{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.inputEmail{
+    top: 34.5px;
+}
+.inputSenha{
+    top: 35.5px;
+}
+input{
+    width: 299px;
+    height: 24px;
+    border: 1px solid #6D7579;
+    border-radius: 4px;
+    background: none;
+    font-size: 1rem;
+    color: #6D7579;
+    transition: 150ms cubic-bezier(0.2, 0, 0.2, 1);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 15px;
+    letter-spacing: 0em;
+    padding: 5px 10px 5px 10px;
+}
+label{
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    color: #6D7579;
+    pointer-events: none;
+    transform: translateY(9px);
+    transition: 150ms cubic-bezier(0.2, 0, 0.2, 1);
+}
+input:focus{
+    outline: none;
+}
+input:focus ~ label{
+    transform: translateY(-50%) scale(0.8);
+    background-color: #FFFFFF;
+    padding: 0 0.2em;
+    color: #6D7579
+}
+
+.inputTeste ~ label{
+    transform: translateY(-50%) scale(0.8);
+    background-color: #FFFFFF;
+    padding: 0 0.2em;
+    color: #6D7579
+}
+#valor1:invalid{
+    border-color: rgba(254, 96, 96, 1);
+    box-shadow: 0px 0px 3px rgba(254, 96, 96, 1);
+  }
+  
+#valor1:focus{
+    outline: none;
+  }
+  
+#valor1:focus:invalid{
+    box-shadow: none;
+  }
+  
+span{
+    color:  rgba(254, 96, 96, 1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-left:15px;
+  }
+
+
+
+.google{
+    position: absolute;
+    height: 16px;
+    width: 146px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #6D7579;
+    top: 195px;
+    left: 80px;
+    cursor: pointer;
+}
+.google u{
+    width: 140px;
+    height: 16px;
+    padding-left: 3.5px;
+}
+.findPassword{
+    cursor: pointer;
+    height: 16px;
+    width: 156px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #6D7579;
+    top: 223px;
+    left: 81px;
+    position: absolute;
+}
+.findPassword u{
+    width: 140px;
+    height: 16px;
+    padding-left: 3.5px;
+}
+
+.entrar{
+    outline: none;
+    height: 36px;
+    width: 320px;
+    left: 0px;
+    border-radius: 1000px;
+    cursor: pointer;
+    background: #64D38A;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FEFEFE;
+    border: none;
+    position: absolute;
+    top: 261px; 
+}
+.entrar:hover{
+    height: 40px;
+    width: 324px;
+    left: -2px;
+    top: 259px;
+    font-size: 16px;
+    transition: all .2s;
+}
+
+#eye{
+    position: relative  ;
+    top: -28px;
+    left: 292px;
+    width: 18px;
+    cursor: pointer;
+}
